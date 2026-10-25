@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../../css/player.css">
+	<title>Takahira</title>
+</head>
+<body>
+	<nav class="top-nav">
+	</nav>
+
+	<nav class="main-nav">
+			<div class="logo">
+				<a href="../../../index.html">
+					<img class="emblem" src="../../../images/emblem.png" alt="フェルブリッツ市川のエンブレム">
+				</a>
+			</div>			
+			<!-- 三本線ボタン -->
+		<button class="menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="menu">
+			<div class="menu-row">
+				<a class="menu-parent" href="ニュース/index.html">ニュース</a>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="チーム/index.html">チーム</a>
+				<div class="menu-children">
+					<a href="../index.html">トップチーム選手一覧</a>
+					<a href="チーム/練習生/index.html">練習生</a>
+					<a href="チーム/スタッフ/index.html">スタッフ</a>
+					<a href="チーム/ユース/index.html">ユース</a>
+				</div>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="クラブ/index.html">クラブ</a>
+				<div class="menu-children">
+					<a href="クラブ/歴史/index.html">歴史</a>
+					<a href="クラブ/信念/index.html">信念</a>
+					<a href="クラブ/運営・本部/index.html">運営・本部</a>
+				</div>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="カレンダー/index.html">カレンダー</a>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="ファンクラブ/index.html">ファンクラブ</a>
+			</div>
+		</div>
+	</nav>
+
+	<nav>
+		<div class="alternative-sns">
+			<a href="https://www.instagram.com/felblitz_official?stkn=MWR2bm9rNThkcHZtZw==">
+				<img class="instagram" src="../../../images/instagram.png">
+			</a>
+			<a href="https://youtube.com/channel/UCnecQwcgM94ykT7z-9NpuwA?si=qV8ZeQlIZ7pMD4JF">
+				<img class="youtube" src="../../../images/youtube.png">
+			</a>
+			<a href="https://www.tiktok.com/@fc70240?_r=1&_t=ZS-99ree6FuVk5">
+				<img class="tiktok" src="../../../images/tiktok.png">
+			</a>
+		</div>
+	</nav>
+
+	<div class="TOP">
+
+		<div class="card">
+			<span class="number">7</span>
+			<div class="name-position">
+				<span class="name-en">Takahira Yuzuki</span>
+				<span class="name-ja">髙比良優月</span>
+				<span class="position">DF/MF/FW</span>
+			</div>		
+		</div>
+
+    <span class="record">
+			<div class="matches">
+				<span>試合数</span>
+				<span class="record-number">14</span>
+			</div>
+			<div class="goals">
+				<span>ゴール数</span>
+				<span class="record-number">3</span>
+			</div>
+			<div class="assists">
+				<span>アシスト数</span>
+				<span class="record-number">2</span>
+			</div>
+		</span>
+	</div>
+
+	<border>
+
+	</border>
+
+	<div class="profile-parent">
+		<dl class="profile">
+			<dd class="profile-title">名前</dd>
+			<dd class="profile-content">髙比良 優月</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">生年月日</dd>
+			<dd class="profile-content">2004年8月3日(22歳)</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">身長/体重</dd>
+			<dd class="profile-content">171cm/59kg</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">出身地</dd>
+			<dd class="profile-content">千葉県市原市</dd>
+		</dl>
+	</div>
+
+	<div class="profile-parent">
+		<dl class="profile">
+			<dd class="profile-title">ニックネーム</dd>
+			<dd class="profile-content">ゆづき</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">キャラクター</dd>
+			<dd class="profile-content">岡村さんの飼い主⛓️</dd>
+			<dd class="profile-content">実はキャプテンシーがあり、彼がいるとチームの空気が澄む😍</dd>
+			<dd class="profile-content">フェルブリッツのリーズナブル空気清浄機</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">役職</dd>
+			<dd class="profile-content">第3キャプテン</dd>
+		</dl>
+	</div>
+
+	<div class="profile-parent">
+		<dl class="profile">
+			<dd class="profile-title">好きなこと・もの</dd>
+			<dd class="profile-content">スポーツ観戦</dd>
+		</dl>
+
+		<dl class="profile">
+			<dd class="profile-title">アピールポイント</dd>
+			<dd class="profile-content">攻守にわたってチームに貢献し、FWを活かすラストパスでチャンスを演出します！</dd>
+		</dl>
+	</div>
+
+<script>
+	const button = document.querySelector(".menu-button");
+	const menu = document.querySelector(".menu");
+
+	button.addEventListener("click", function(){
+		menu.classList.toggle("open");
+		button.classList.toggle("open");
+	});
+</script>
+
+</body>
+</html>
+

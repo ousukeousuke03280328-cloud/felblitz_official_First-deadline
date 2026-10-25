@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>felblitz_official</title>
+	<link rel="stylesheet" href="css/top.css">
+</head>
+	
+
+	<body>
+	<nav class="top-nav">
+	</nav>
+
+	<nav class="main-nav">
+			<div class="logo">
+				<a href="index.html">
+					<img class="emblem" src="images/emblem.png" alt="フェルブリッツ市川のエンブレム">
+				</a>
+			</div>			
+			<!-- 三本線ボタン -->
+		<button class="menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="menu">
+			<div class="menu-row">
+				<a class="menu-parent" href="ニュース/index.html">ニュース</a>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="チーム/index.html">チーム</a>
+				<div class="menu-children">
+					<a href="チーム/トップチーム選手一覧/index.html">トップチーム選手一覧</a>
+					<a href="チーム/練習生/index.html">練習生</a>
+					<a href="チーム/スタッフ/index.html">スタッフ</a>
+					<a href="チーム/ユース/index.html">ユース</a>
+				</div>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="クラブ/index.html">クラブ</a>
+				<div class="menu-children">
+					<a href="クラブ/歴史/index.html">歴史</a>
+					<a href="クラブ/信念/index.html">信念</a>
+					<a href="クラブ/運営・本部/index.html">運営・本部</a>
+				</div>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="カレンダー/index.html">カレンダー</a>
+			</div>
+
+			<div class="menu-row">
+				<a class="menu-parent" href="ファンクラブ/index.html">ファンクラブ</a>
+			</div>
+		</div>
+	</nav>
+
+	<nav>
+		<div class="alternative-sns">
+			<a href="https://www.instagram.com/felblitz_official?stkn=MWR2bm9rNThkcHZtZw==">
+				<img class="instagram" src="images/instagram.png">
+			</a>
+			<a href="https://youtube.com/channel/UCnecQwcgM94ykT7z-9NpuwA?si=qV8ZeQlIZ7pMD4JF">
+				<img class="youtube" src="images/youtube.png">
+			</a>
+			<a href="https://www.tiktok.com/@fc70240?_r=1&_t=ZS-99ree6FuVk5">
+				<img class="tiktok" src="images/tiktok.png">
+			</a>
+		</div>
+	</nav>
+
+		<main>
+			<div class="background-main-news">
+				<div class="main-news">
+					<a href="#">
+						<img class="main-news-photo">                                                                                                                                                                                                                                                                                                                nnnn photo" src="#">
+					</a>
+					<p class="main-news-sentense">予定：メインニュースセンテンス
+					</p>
+				</div>
+			</div>
+			
+			<div class="background-sub-news">
+				<div class="sub-news-A">
+
+					<div class="sub-news-A1">
+						<a href="https://youtu.be/giiJtPXb5J8?si=QzeJARIjAviE2TWy">
+							<img class="sub-news-A1-photo" src="images/Taiki.png">
+						</a>
+						<p class="sub-news-A1-sentense">私たちのGMは汚いプレイヤーによって攻撃された
+						</p>
+					</div>
+
+					<div class="sub-news-A2">
+						<a href="#">
+							<img class="sub-news-A2-photo" src="#">
+						</a>
+						<p class="sub-news-A2-sentense">イサギ、オン・ファイアー
+						</p>
+					</div>
+
+					<div class="sub-news-A3">
+						<a href="#">
+							<img class="sub-news-A3-photo" src="#">
+						</a>
+						<p class="sub-news-A3-sentense">ケイトにケビンデブライネが憑依したレイニーデー
+						</p>
+					</div>
+
+					
+				</div>
+			</div>
+		</main>
+
+		<script>
+	const button = document.querySelector(".menu-button");
+	const menu = document.querySelector(".menu");
+
+	button.addEventListener("click", function(){
+		menu.classList.toggle("open");
+		button.classList.toggle("open");
+	});
+		</script>
+
+	</body>
+</html>
+
+<!--
+👇こうすけの要望
+・RB大宮アルディージャのサイトを参考
+・練習パートナー　枠として　はま　みゆ　ひとことメッセージ
+・カードを押したら選手詳細がでる
+・ファンクラブ、MG、株主、スポンサー
+-->
+
+<!--
+👇皆さんへ言うこと
+・他のチームの公式サイト（レアルソシエダ、アトレティコ、バルセロナ）は、ナビバーが上に二つあった。これは配色を気にして決めていることだと思う。
+あと、すべてのチームがロゴではなくユニフォームを基調にしている配色だった
+・参考元
+-top-navの青帯はレアルソシエダのサイトを参考にしていたが、細い帯に変更した
+-下のフェルブリッツをSNSでフォロー　はバルセロナのサイトを参考にした
+・合名会社の理由は、ユニフォームやキャプテンマーク等を全員で出資しているので、全員が無限責任社員に当てはまる為です
+-->
+
+<!--
+👇短期的タスク
+・
+
+👇長期的タスク
+・🌟三本線にカーソルを合わせたら、項目が出る仕組み
+・🌟🌟スマホ👉三本線ナビ、PC👉三本線わんちゃん不要
+・🌟写真にカーソルを合わせた時に若干ズームされるようにする
+・🌟SNSのアイコンを白黒のデザインに変更する
+・🌟class=○○sentenseのやつ、a だけでできるかもしれない　時間あったらaiに聞く
+・🌟各選手のインスタグラムのアイコンを導入する（？）
+
+👇練習が必要な技術的な課題
+・box-sizing: border-box;
+・span
+・三本線の作成
+・三本線の🔥のエフェクト
+-->

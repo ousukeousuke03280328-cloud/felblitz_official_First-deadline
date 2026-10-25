@@ -1,0 +1,225 @@
+body{
+	margin:100px 0;
+	background:rgb(36, 32, 32);
+}
+
+.top-nav{
+background:rgb(5, 9, 68);
+position:fixed;
+width:100%;
+top:0px;
+left:0px;
+padding:3px;
+}
+
+.main-nav{
+ background:rgb(14, 3, 3);
+ padding:0 10px;
+ display:flex;
+ justify-content: space-between;
+ position:fixed;
+ width:100%;
+ top:4px;
+ left:0px;
+ box-sizing:border-box;/*widthにpadding border含めて　という指定*/
+}
+
+.emblem{
+	width: 50px;
+	margin-left:40px;
+	margin-top:10px;
+}
+
+main{
+	margin-top:100px;
+}
+
+button{
+	background:rgb(68, 29, 29);
+	border:none;
+	width:55px;
+}
+
+button span{
+  display:block;
+	/*Aー ー ーをー
+	     	 　　　ー
+			 	　　　 ー
+	に変えるためのblock*/
+  width:40px;
+  height:1px;
+  background:white;
+	margin:6px 0;
+}
+
+/* ===== ここから炎のエフェクト ===== */
+@keyframes flame{
+	0%{
+		box-shadow:
+			0 0 6px 2px rgba(255, 220, 80, 0.9),
+			0 -4px 12px 4px rgba(255, 140, 0, 0.8),
+			0 -8px 20px 6px rgba(255, 60, 0, 0.6);
+	}
+	50%{
+		box-shadow:
+			0 0 10px 4px rgba(255, 240, 120, 1),
+			0 -8px 18px 8px rgba(255, 120, 0, 0.9),
+			0 -14px 30px 10px rgba(255, 40, 0, 0.7);
+	}
+	100%{
+		box-shadow:
+			0 0 6px 2px rgba(255, 220, 80, 0.9),
+			0 -4px 12px 4px rgba(255, 140, 0, 0.8),
+			0 -8px 20px 6px rgba(255, 60, 0, 0.6);
+	}
+}
+
+button.open{
+	animation:flame 0.8s ease-in-out infinite;
+}
+
+button.open span{
+	background:rgb(255, 200, 80);
+}
+
+@media (prefers-reduced-motion: reduce){
+	button.open{
+		animation:none;
+	}
+}
+/* ===== 炎のエフェクトここまで ===== */
+
+.menu{
+	display:none;
+	position:fixed;
+	top:79px;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgb(3, 1, 1);
+}
+
+.menu-row{
+	display:flex;
+}
+
+.menu-parent{
+	display:block;
+	padding:50px;
+	color:rgb(253, 253, 253);
+	text-decoration:none;
+	font-size:40px;
+	font-weight:bold;
+}
+
+.menu-children{
+	padding:65px;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.menu-children a{
+	padding:20px;
+	color:white;
+	text-decoration:none;
+}
+
+.menu.open{
+	display:block;
+}
+/*menu displya:none を openになったときにblockに変更する*/
+
+.alternative-sns{
+	background:rgb(138, 14, 14, 0.0);
+	height:900px;
+	width:70px;
+	display:flex;
+	flex-direction:column;
+	margin-top:100px;
+	position:fixed;
+	right:0px;
+}
+
+.instagram{
+	width:50px;
+	margin:10px;
+	margin-top:200px;
+}
+
+.youtube{
+	width:50px;
+	margin:10px;
+}
+
+.tiktok{
+	width:50px;
+	margin:10px;
+}
+
+.top-team{
+	font-size:30px;
+	color:yellow;
+}
+
+.players{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	margin:150px 200px;
+}
+
+.players a{
+	text-decoration:none;
+}
+
+.card{
+	background: linear-gradient(
+  90deg,
+  rgb(80, 10, 10),
+  rgb(114, 33, 20),
+  rgb(22, 13, 13)
+);
+	height:400px;
+	width:300px;
+	text-align: center;
+	text-decoration:none;
+	display: flex;/*!注*/
+  justify-content: center;
+  align-items: flex-end;
+	transition: transform 0.3s ease;/*!注*/
+	margin:10px;
+}
+
+/*!注*/
+.card:hover {
+  transform: scale(1.05);
+}
+
+.number{
+	color:white;
+	margin-right:20px;
+	font-size:70px;
+}
+
+.name_positon{
+	display:flex;
+	flex-direction:column;
+}
+
+.name-en{
+	color:white;
+	font-size:20px;
+	text-align:center;
+}
+
+.name-ja{
+	color:white;
+	font-size:20px;
+	text-align:center
+}
+
+.positon{
+	color:white;
+	font-size:20px;
+}
